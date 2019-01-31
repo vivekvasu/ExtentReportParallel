@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite" parallel="tests">
+	<test name="RegistrationPageRegressionTests">
+		<classes>
+			<class name="tests.RegistrationTests">
+				<methods>
+					<include name="enterFirstNameAndLastNameTest"></include>
+					<include name="selectMaritalStatusTest"></include>
+					<include name="selectAHobbyTest"></include>
+					<include name="selectCountryTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="RegistrationPageRegressionTests2">
+		<classes>
+			<class name="tests.RegistrationTests">
+				<methods>
+					<include name="enterFirstNameAndLastNameTest"></include>
+					<include name="selectMaritalStatusTest"></include>
+					<include name="selectAHobbyTest"></include>
+					<include name="selectCountryTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="RegistrationPageRegressionTests3">
+		<classes>
+			<class name="tests.RegistrationTests">
+				<methods>
+					<include name="enterFirstNameAndLastNameTest"></include>
+					<include name="selectMaritalStatusTest"></include>
+					<include name="selectAHobbyTest"></include>
+					<include name="selectCountryTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="RegistrationPageRegressionTests4">
+		<classes>
+			<class name="tests.RegistrationTests">
+				<methods>
+					<include name="enterFirstNameAndLastNameTest"></include>
+					<include name="selectMaritalStatusTest"></include>
+					<include name="selectAHobbyTest"></include>
+					<include name="selectCountryTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
