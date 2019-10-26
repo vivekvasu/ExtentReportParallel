@@ -1,7 +1,7 @@
 pipeline { 
     agent any 
     stages { 
-   		 stage('clean') { 
+   		 stage('Clean Directory') { 
             steps { 
             	withMaven(maven : 'MAVEN_HOME')
             	{
@@ -9,7 +9,7 @@ pipeline {
             	}
             }
         }
-        stage('compile') { 
+        stage('Compile Build') { 
             steps { 
                withMaven(maven : 'MAVEN_HOME')
             	{
