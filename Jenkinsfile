@@ -1,22 +1,36 @@
 pipeline { 
     agent any 
-    tools {
-        maven 'MAVEN_HOME'
-    } 
     stages { 
    		 stage('clean') { 
             steps { 
-               sh 'mvn clean'
+            	withMaven(maven : 'MAVEN_HOME')
+            	{
+            		 sh 'mvn clean'
+            	}
             }
         }
         stage('compile') { 
             steps { 
-               sh 'mvn clean'
+               withMaven(maven : 'MAVEN_HOME')
+            	{
+            		 sh 'mvn compile'
+            	}
             }
         }
         stage('build') { 
             steps { 
-               sh 'mvn install'
+               withMaven(maven : 'MAVEN_HOME')
+            	{
+            		 sh 'mvn install'
+            	}
+            }
+        }
+        stage('deploy') { 
+            steps { 
+               withMaven(maven : 'MAVEN_HOME')
+            	{
+            		 sh 'mvn deploy'
+            	}
             }
         }
     }
