@@ -5,15 +5,15 @@ pipeline {
             steps { 
             	withMaven(maven : 'MAVEN_HOME')
             	{
-            		 bat 'mvn clean install'
+            		 bat 'mvn clean'
             	}
             }
         }
-        stage('deploy') { 
+        stage('compile') { 
             steps { 
                withMaven(maven : 'MAVEN_HOME')
             	{
-            		 bat 'mvn deploy'
+            		 bat 'mvn install'
             	}
             }
         }
