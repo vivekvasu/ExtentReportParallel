@@ -13,6 +13,7 @@
 			</class>
 		</classes>
 	</test>
+	sss
 	<test name="RegistrationPageRegressionTests2">
 		<classes>
 			<class name="tests.RegistrationTests">
