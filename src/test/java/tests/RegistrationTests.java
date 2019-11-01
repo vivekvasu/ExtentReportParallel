@@ -6,7 +6,6 @@ import com.aventstack.extentreports.Status;
 
 public class RegistrationTests extends BaseTests
 {
-	gbd
 	@Test (description = "This test case is to verify that the firstname and lastname is entered.", groups= {"abc"})
 	public void enterFirstNameAndLastNameTest()
 	{
