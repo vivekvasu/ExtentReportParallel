@@ -31,8 +31,9 @@ pipeline {
     post {
    		 failure {
         		mail to: 'vivekvivi39@gmail.com',
-             	subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
-            	body: "Something is wrong with ${env.BUILD_URL}"
+             	subject: "Build Failed: ${currentBuild.fullDisplayName}",
+            	body: "Something is wrong with ${env.BUILD_URL}
+            	This is probably due to compilation issue. Kindly resolve it."
     			}
 		}
 }
