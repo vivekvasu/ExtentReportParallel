@@ -18,7 +18,7 @@ pipeline {
             }
         } 
         stage('Email Notification') { 
-           mail bcc: '', body: '''Hello Team,
+           mail bcc: '', body: '''Hello Team ,
            
            Please find below the results
 
